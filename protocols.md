@@ -1,4 +1,5 @@
 # protocol 1
+```py
 task_message(
             headers={},
             properties={
@@ -32,8 +33,9 @@ task_message(
                 'expires': expires,
             } if create_sent_event else None,
         )
- 
+ ```
  # protocol 2
+ ```py
  task_message(
             headers={
                 'lang': 'py',
@@ -77,3 +79,4 @@ task_message(
                 'expires': expires,
             } if create_sent_event else None,
         )
+```
